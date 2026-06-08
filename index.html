@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>صالون المرأة الكلاسيكية · CLASSIC WOMEN — تبوك</title>
+<meta name="description" content="صالون المرأة الكلاسيكية للتزيين في تبوك — صبغة وعناية بالشعر، مكياج، عناية بالأظافر، وتصفيف، بأيدٍ احترافية وأجواء راقية. احجزي موعدك عبر واتساب.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=El+Messiri:wght@400;500;600;700&family=Tajawal:wght@300;400;500;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" rel="stylesheet">
+<style>
+:root{
+  --ink:#33252b; --plum:#5a3b44; --plum-d:#3d262e; --rose:#cf95a0; --rose-d:#b06a78; --blush:#ecccd0;
+  --gold:#bd9852; --gold-l:#dcc188; --gold-d:#9a7838;
+  --cream:#f6ece6; --cream-2:#efe0d7; --paper:#fcf8f4; --marble:#ebe4df; --sand:#e6d6c8;
+  --muted:#8d7a80; --line:rgba(51,37,43,.12); --wa:#1faf54;
+  --fa-d:'El Messiri',serif; --fa:'Tajawal',sans-serif;
+  --fl:'Cormorant Garamond',serif; --fu:'Jost',sans-serif;
+  --e1:cubic-bezier(.22,1,.36,1); --e2:cubic-bezier(.65,0,.35,1); --e3:cubic-bezier(.16,1,.3,1); --rad:26px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--fa);background:var(--paper);color:var(--ink);line-height:1.75;
+  overflow-x:hidden;font-weight:400;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body.lock{overflow:hidden}
+::selection{background:var(--rose);color:#fff}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.en{font-family:var(--fu);direction:ltr;unicode-bidi:isolate}
+.fl{font-family:var(--fl);direction:ltr;unicode-bidi:isolate}
+.grain{position:fixed;inset:0;z-index:120;pointer-events:none;opacity:.038;mix-blend-mode:multiply}
+.progress{position:fixed;top:0;right:0;height:3px;width:0;z-index:301;
+  background:linear-gradient(90deg,var(--rose),var(--gold-l),var(--rose-d));pointer-events:none}
+
+/* WhatsApp float */
+.wa-float{position:fixed;bottom:24px;left:24px;z-index:130;width:60px;height:60px;border-radius:50%;
+  background:var(--wa);color:#fff;display:grid;place-items:center;font-size:30px;
+  box-shadow:0 14px 36px -10px rgba(31,175,84,.6);transition:.4s var(--e1);animation:waPulse 2.6s infinite}
+.wa-float:hover{transform:scale(1.08) translateY(-2px)}
+.wa-float::after{content:"احجزي موعدك";position:absolute;left:72px;white-space:nowrap;
+  background:var(--plum-d);color:#fff;font-family:var(--fa-d);font-size:13px;padding:8px 14px;border-radius:30px;
+  opacity:0;transform:translateX(-8px);transition:.4s var(--e1);pointer-events:none}
+.wa-float:hover::after{opacity:1;transform:none}
+@keyframes waPulse{0%{box-shadow:0 14px 36px -10px rgba(31,175,84,.6),0 0 0 0 rgba(31,175,84,.4)}
+  70%{box-shadow:0 14px 36px -10px rgba(31,175,84,.6),0 0 0 16px rgba(31,175,84,0)}100%{box-shadow:0 14px 36px -10px rgba(31,175,84,.6),0 0 0 0 rgba(31,175,84,0)}}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:center;padding:22px 18px;transition:padding .5s var(--e1)}
+.nav.shrink{padding:12px 18px}
+.nav-pill{display:flex;align-items:center;gap:26px;width:min(1180px,100%);
+  background:rgba(252,248,244,.74);backdrop-filter:blur(22px) saturate(1.5);-webkit-backdrop-filter:blur(22px) saturate(1.5);
+  border:1px solid rgba(51,37,43,.08);border-radius:60px;padding:10px 14px 10px 24px;
+  box-shadow:0 16px 46px -24px rgba(90,59,68,.4);transition:.5s var(--e1)}
+.brand{display:flex;align-items:center;gap:12px;margin-inline-end:auto}
+.brand-mk{width:44px;height:44px;border-radius:50%;flex:none;display:grid;place-items:center;
+  background:radial-gradient(circle at 32% 26%,var(--gold-l),var(--gold-d));color:#fff;font-family:var(--fl);font-size:22px;font-weight:600;
+  box-shadow:inset 0 1px 2px rgba(255,255,255,.4),0 7px 16px -8px rgba(154,120,56,.6)}
+.brand-tx{display:flex;flex-direction:column;line-height:1.04}
+.brand-tx b{font-family:var(--fa-d);font-weight:700;font-size:17px;color:var(--plum)}
+.brand-tx span{font-family:var(--fu);font-size:9px;letter-spacing:.3em;color:var(--gold-d);text-transform:uppercase;font-weight:500}
+.nav-links{display:flex;align-items:center;gap:4px}
+.nav-links a{font-family:var(--fa-d);font-size:15px;color:#5a4750;font-weight:500;padding:9px 14px;border-radius:30px;transition:.35s var(--e1)}
+.nav-links a:hover{color:var(--rose-d);background:rgba(207,149,160,.12)}
+.nav-cta{display:flex;align-items:center;gap:9px;background:var(--wa);color:#fff!important;padding:9px 9px 9px 18px!important;border-radius:40px!important}
+.nav-cta:hover{background:#199848!important}
+.nav-cta i{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.22);display:grid;place-items:center;font-size:15px;transition:.4s var(--e1)}
+.nav-cta:hover i{transform:scale(1.1)}
+.burger{display:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.5);cursor:pointer;position:relative;flex:none}
+.burger span{position:absolute;left:13px;width:20px;height:1.6px;background:var(--plum);border-radius:2px;transition:.45s var(--e1)}
+.burger span:nth-child(1){top:18px}.burger span:nth-child(2){top:24px}.burger span:nth-child(3){top:30px}
+.burger.on span:nth-child(1){top:24px;transform:rotate(45deg)}
+.burger.on span:nth-child(2){opacity:0}
+.burger.on span:nth-child(3){top:24px;transform:rotate(-45deg)}
+.overlay{position:fixed;inset:0;z-index:90;background:rgba(61,38,46,.95);backdrop-filter:blur(26px);-webkit-backdrop-filter:blur(26px);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:4px;opacity:0;visibility:hidden;transition:.6s var(--e1)}
+.overlay.on{opacity:1;visibility:visible}
+.overlay a{font-family:var(--fa-d);font-size:clamp(28px,7vw,40px);color:var(--cream);font-weight:500;opacity:0;transform:translateY(34px);transition:.7s var(--e1);display:flex;align-items:baseline;gap:14px}
+.overlay a .ix{font-family:var(--fl);font-style:italic;font-size:15px;color:var(--gold-l);direction:ltr}
+.overlay.on a{opacity:1;transform:none}
+.overlay.on a:nth-child(1){transition-delay:.08s}.overlay.on a:nth-child(2){transition-delay:.15s}
+.overlay.on a:nth-child(3){transition-delay:.22s}.overlay.on a:nth-child(4){transition-delay:.29s}
+.overlay.on a:nth-child(5){transition-delay:.36s}
+.overlay-foot{position:absolute;bottom:34px;font-family:var(--fu);font-size:11px;letter-spacing:.26em;color:rgba(246,236,230,.5);text-transform:uppercase}
+
+/* HERO */
+.hero{position:relative;min-height:100dvh;display:flex;align-items:flex-end;padding:0 0 8vh;overflow:hidden}
+.hero-bg{position:absolute;inset:-8% 0;z-index:-2;will-change:transform}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;animation:zoom 24s var(--e1) forwards}
+@keyframes zoom{from{transform:scale(1.14)}to{transform:scale(1)}}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(61,38,46,.4) 0%,rgba(61,38,46,.1) 34%,rgba(61,38,46,.5) 70%,rgba(40,24,30,.9) 100%)}
+.hero-inner{width:min(1180px,90vw);margin:0 auto;position:relative;z-index:2;color:#fff}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--fa);font-size:13.5px;font-weight:500;color:#fff;
+  background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.24);padding:8px 18px;border-radius:40px;backdrop-filter:blur(8px);
+  margin-bottom:24px;opacity:0;animation:hUp 1s var(--e3) .2s forwards}
+.hero-eyebrow b{color:var(--blush);font-weight:700}
+.hero-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--gold-l);box-shadow:0 0 10px var(--gold-l)}
+.hero h1{font-family:var(--fa-d);font-weight:700;line-height:.98;font-size:clamp(48px,9vw,128px);letter-spacing:-.01em;
+  text-shadow:0 28px 80px rgba(0,0,0,.4);opacity:0;animation:hUp 1.1s var(--e3) .32s forwards}
+.hero h1 .en{display:block;font-family:var(--fl);font-style:italic;font-weight:500;font-size:clamp(20px,3.4vw,40px);
+  letter-spacing:.36em;color:var(--gold-l);margin-top:14px;text-shadow:none;padding-inline-start:.5em}
+.hero .lede{font-size:clamp(16px,2vw,20px);max-width:520px;color:rgba(255,255,255,.9);font-weight:300;margin:22px 0 34px;
+  opacity:0;animation:hUp 1.1s var(--e3) .46s forwards}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;opacity:0;animation:hUp 1.1s var(--e3) .58s forwards}
+@keyframes hUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+.btn{display:inline-flex;align-items:center;gap:13px;font-family:var(--fa-d);font-weight:600;font-size:15.5px;
+  padding:13px 14px 13px 26px;border-radius:46px;cursor:pointer;border:none;transition:.45s var(--e1)}
+.btn i{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:17px;transition:.45s var(--e1)}
+.btn-wa{background:var(--wa);color:#fff}.btn-wa i{background:rgba(255,255,255,.22);color:#fff}
+.btn-wa:hover{transform:translateY(-3px);box-shadow:0 18px 40px -16px rgba(31,175,84,.6)}
+.btn-wa:hover i{transform:scale(1.1)}
+.btn-light{background:#fff;color:var(--plum)}.btn-light i{background:var(--rose);color:#fff}
+.btn-light:hover{transform:translateY(-3px);box-shadow:0 18px 40px -16px rgba(0,0,0,.4)}
+.btn-light:hover i{transform:translateX(-4px)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.34)}
+.btn-ghost i{background:rgba(255,255,255,.18);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.2);transform:translateY(-3px)}
+.hero-rate{position:absolute;bottom:8vh;left:max(5vw,28px);z-index:2;display:flex;align-items:center;gap:12px;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);padding:11px 18px;border-radius:40px;
+  opacity:0;animation:hUp 1s var(--e3) .7s forwards}
+.hero-rate .st{display:flex;gap:2px;color:var(--gold-l);font-size:13px}
+.hero-rate b{font-family:var(--fl);font-size:19px;color:#fff}
+.hero-rate span{font-family:var(--fu);font-size:11px;color:rgba(255,255,255,.7)}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:7px;color:rgba(255,255,255,.65);font-family:var(--fu);font-size:10px;letter-spacing:.3em}
+.scroll-hint .ln{width:1px;height:38px;background:linear-gradient(rgba(255,255,255,.7),transparent);animation:drop 1.9s var(--e2) infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* MARQUEE */
+.marq{background:var(--plum-d);color:#fff;padding:17px 0;overflow:hidden;border-block:1px solid rgba(220,193,136,.18)}
+.marq-track{display:flex;align-items:center;gap:42px;width:max-content;animation:scroll 34s linear infinite}
+.marq-track .tk{font-family:var(--fa-d);font-weight:500;font-size:20px;color:#fff;white-space:nowrap;opacity:.95}
+.marq-track .tk.en{font-family:var(--fl);font-style:italic;font-weight:500;font-size:24px;letter-spacing:.02em;color:var(--gold-l)}
+.marq-track .sep{color:var(--rose);font-size:12px;flex:none}
+@keyframes scroll{to{transform:translateX(50%)}}
+
+/* SECTIONS */
+.wrap{width:min(1180px,90vw);margin:0 auto}
+.pad{padding:clamp(84px,12vh,150px) 0}
+.s-head{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:62px}
+.tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--fa);font-size:13px;font-weight:600;color:var(--rose-d);
+  padding:7px 17px;border:1px solid rgba(176,106,120,.34);border-radius:40px;margin-bottom:22px}
+.tag i{font-size:15px}
+.s-head h2{font-family:var(--fa-d);font-weight:700;font-size:clamp(34px,5.4vw,62px);line-height:1.06;color:var(--plum)}
+.s-head h2 em{font-family:var(--fa-d);font-style:normal;font-weight:500;color:var(--rose-d)}
+.s-head p{max-width:580px;color:var(--muted);margin-top:16px;font-size:16.5px;font-weight:300}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
+.about-tx .tag{margin-bottom:24px}
+.about-tx h2{font-family:var(--fa-d);font-weight:700;font-size:clamp(32px,4.4vw,52px);line-height:1.12;color:var(--plum);margin-bottom:22px}
+.about-tx h2 em{font-family:var(--fa-d);font-style:normal;font-weight:500;color:var(--rose-d)}
+.about-tx p{color:#574850;margin-bottom:18px;font-size:16.5px;font-weight:300}
+.about-tx p b{font-weight:500;color:var(--ink)}
+.counters{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.cnt{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:20px 12px;text-align:center}
+.cnt b{display:block;font-family:var(--fl);font-size:clamp(30px,3.4vw,40px);color:var(--rose-d);line-height:1;font-weight:600;direction:ltr}
+.cnt span{font-family:var(--fa-d);font-size:12.5px;color:var(--muted);margin-top:8px;display:block;font-weight:500}
+.about-media{position:relative}
+.frame{position:relative;background:var(--cream);border:1px solid var(--line);border-radius:30px;padding:9px;box-shadow:0 38px 76px -40px rgba(90,59,68,.4)}
+.frame img{border-radius:22px;width:100%;height:580px;object-fit:cover}
+.frame .badge{position:absolute;bottom:-22px;left:24px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 20px;display:flex;align-items:center;gap:13px;box-shadow:0 18px 42px -20px rgba(90,59,68,.5)}
+.frame .badge i{width:42px;height:42px;border-radius:12px;background:var(--rose);color:#fff;display:grid;place-items:center;font-size:21px}
+.frame .badge b{font-family:var(--fa-d);font-size:15px;color:var(--plum);display:block;font-weight:600}
+.frame .badge span{font-family:var(--fu);font-size:11px;color:var(--muted);letter-spacing:.05em}
+.about-chip{position:absolute;top:-18px;right:-18px;width:112px;height:112px;border-radius:50%;background:var(--gold);color:#fff;
+  display:grid;place-items:center;text-align:center;rotate:8deg;box-shadow:0 18px 40px -18px rgba(154,120,56,.7);z-index:2}
+.about-chip span{font-family:var(--fa-d);font-size:13px;font-weight:600;line-height:1.3}
+@media(max-width:980px){.about-chip{display:none}}
+
+/* SERVICES */
+.services{background:linear-gradient(180deg,var(--cream),var(--cream-2))}
+.srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.srv{background:var(--paper);border:1px solid var(--line);border-radius:var(--rad);padding:36px 30px;transition:.5s var(--e1);position:relative;overflow:hidden}
+.srv::before{content:"";position:absolute;top:0;right:0;width:100%;height:3px;background:linear-gradient(90deg,var(--rose),var(--gold));transform:scaleX(0);transform-origin:right;transition:.6s var(--e1)}
+.srv:hover{transform:translateY(-8px);box-shadow:0 30px 60px -32px rgba(90,59,68,.3)}
+.srv:hover::before{transform:scaleX(1)}
+.srv-ic{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;font-size:31px;background:linear-gradient(150deg,rgba(207,149,160,.18),rgba(189,152,82,.18));color:var(--rose-d);margin-bottom:22px}
+.srv h3{font-family:var(--fa-d);font-weight:600;font-size:22px;color:var(--plum);margin-bottom:6px}
+.srv h3 .se{font-family:var(--fl);font-style:italic;font-weight:500;font-size:15px;color:var(--gold-d);display:block;letter-spacing:.02em}
+.srv p{color:var(--muted);font-size:15px;font-weight:300;margin-top:10px}
+.srv ul{list-style:none;margin-top:14px;display:flex;flex-wrap:wrap;gap:7px}
+.srv ul li{font-family:var(--fa);font-size:12.5px;color:var(--rose-d);background:rgba(207,149,160,.12);padding:4px 12px;border-radius:30px}
+
+/* GALLERY */
+.gal-bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:230px;gap:18px}
+.gc{position:relative;border-radius:var(--rad);overflow:hidden;cursor:pointer;border:1px solid var(--line);background:#000}
+.gc img{width:100%;height:100%;object-fit:cover;transition:1.2s var(--e1);opacity:.97}
+.gc:hover img{transform:scale(1.07)}
+.gc .ov{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;background:linear-gradient(transparent 42%,rgba(61,38,46,.86));color:#fff}
+.gc .n{font-family:var(--fu);font-size:11px;letter-spacing:.24em;color:var(--blush);margin-bottom:6px;text-transform:uppercase}
+.gc h3{font-family:var(--fa-d);font-weight:600;font-size:23px}
+.gc-a{grid-column:span 5;grid-row:span 2}.gc-b{grid-column:span 7}
+.gc-c{grid-column:span 4}.gc-d{grid-column:span 3}
+.gc-quote{grid-column:span 7;background:linear-gradient(150deg,var(--plum),var(--plum-d));display:flex;flex-direction:column;justify-content:center;padding:34px;cursor:default}
+.gc-quote .q{font-family:var(--fl);font-style:italic;font-size:26px;color:#fff;line-height:1.25}
+.gc-quote .qa{font-family:var(--fa-d);font-size:17px;color:var(--blush);margin-top:10px;font-weight:500}
+.gc-quote .qm{margin-top:16px;font-family:var(--fu);font-size:11px;letter-spacing:.22em;color:var(--gold-l);text-transform:uppercase}
+
+/* BOOKING */
+.booking{background:var(--plum-d);color:#fff;position:relative;overflow:hidden}
+.booking::before{content:"";position:absolute;top:-26%;right:-12%;width:60%;height:84%;background:radial-gradient(circle,rgba(207,149,160,.26),transparent 66%);pointer-events:none}
+.booking::after{content:"";position:absolute;bottom:-30%;left:-10%;width:55%;height:80%;background:radial-gradient(circle,rgba(189,152,82,.2),transparent 66%);pointer-events:none}
+.bk-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:2}
+.bk-tx .tag{color:var(--blush);border-color:rgba(236,204,208,.4)}
+.bk-tx h2{font-family:var(--fa-d);font-weight:700;font-size:clamp(34px,5vw,58px);line-height:1.06;margin-bottom:20px;color:#fff}
+.bk-tx h2 em{font-family:var(--fa-d);font-style:normal;font-weight:500;color:var(--gold-l)}
+.bk-tx>p{color:rgba(255,255,255,.78);font-weight:300;margin-bottom:30px;max-width:440px}
+.bk-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+.ct-rows{display:flex;flex-direction:column;gap:4px}
+.ct-row{display:flex;align-items:center;gap:18px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.ct-row .ic{width:50px;height:50px;border-radius:14px;flex:none;display:grid;place-items:center;font-size:23px;background:rgba(255,255,255,.08);color:var(--gold-l)}
+.ct-row .d b{font-family:var(--fa-d);font-size:13px;color:rgba(255,255,255,.55);display:block;font-weight:500}
+.ct-row .d span{font-family:var(--fl);font-size:21px;color:#fff;direction:ltr;unicode-bidi:plaintext}
+.ct-row .d .ar{font-family:var(--fa);font-size:16.5px;direction:rtl}
+.bk-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:var(--rad);padding:14px;backdrop-filter:blur(6px)}
+.bk-card img{border-radius:18px;width:100%;height:440px;object-fit:cover}
+.bk-card .cc-foot{display:flex;align-items:center;justify-content:space-between;padding:18px 12px 8px}
+.bk-card .cc-foot b{font-family:var(--fa-d);font-size:16px}
+.bk-card .cc-foot .hrs{font-family:var(--fu);font-size:11px;color:var(--blush);letter-spacing:.06em}
+
+/* FOOTER */
+footer{background:#2b1a20;color:#fff;padding:70px 0 36px;text-align:center}
+.f-mk{width:64px;height:64px;border-radius:50%;margin:0 auto 22px;display:grid;place-items:center;
+  background:radial-gradient(circle at 32% 26%,var(--gold-l),var(--gold-d));font-family:var(--fl);font-size:24px;color:#fff;box-shadow:inset 0 1px 3px rgba(255,255,255,.4)}
+footer h3{font-family:var(--fa-d);font-size:28px;font-weight:700;margin-bottom:4px}
+footer .f-en{font-family:var(--fu);letter-spacing:.32em;font-size:11px;color:var(--gold-l);text-transform:uppercase;margin-bottom:26px}
+.f-links{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-bottom:30px}
+.f-links a{font-family:var(--fa-d);font-size:14.5px;color:rgba(255,255,255,.66);transition:.3s}
+.f-links a:hover{color:var(--gold-l)}
+.f-line{width:100%;max-width:480px;height:1px;background:rgba(255,255,255,.13);margin:0 auto 24px}
+footer small{color:rgba(255,255,255,.5);font-family:var(--fa);font-size:13px;font-weight:300;line-height:2}
+
+/* LIGHTBOX */
+.lb{position:fixed;inset:0;z-index:250;background:rgba(40,24,30,.96);display:flex;align-items:center;justify-content:center;padding:30px;opacity:0;visibility:hidden;transition:.5s var(--e1)}
+.lb.on{opacity:1;visibility:visible}
+.lb img{max-width:92vw;max-height:88vh;border-radius:16px;transform:scale(.92);transition:.5s var(--e1)}
+.lb.on img{transform:scale(1)}
+.lb-x{position:absolute;top:26px;right:26px;width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:24px;cursor:pointer;display:grid;place-items:center}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(46px);filter:blur(8px);transition:opacity 1s var(--e1),transform 1s var(--e1),filter 1s var(--e1)}
+.rv.in{opacity:1;transform:none;filter:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+@media(max-width:980px){
+  .nav-links{display:none}.burger{display:block}
+  .about-grid,.bk-grid{grid-template-columns:1fr;gap:44px}
+  .frame img{height:460px}
+  .counters{grid-template-columns:repeat(3,1fr)}
+  .srv-grid{grid-template-columns:repeat(2,1fr)}
+  .gal-bento{grid-template-columns:repeat(2,1fr);grid-auto-rows:220px}
+  .gc-a{grid-column:span 2;grid-row:span 1}.gc-b,.gc-c,.gc-d,.gc-quote{grid-column:span 1}
+}
+@media(max-width:620px){
+  .nav-pill{padding:9px 9px 9px 18px}.brand-tx b{font-size:15px}
+  .hero{padding-bottom:11vh}.hero h1{font-size:clamp(42px,12vw,72px)}
+  .hero-rate{left:50%;transform:translateX(-50%)}
+  .counters{grid-template-columns:1fr}.srv-grid{grid-template-columns:1fr}
+  .gal-bento{grid-template-columns:1fr}.gc-a,.gc-b,.gc-c,.gc-d,.gc-quote{grid-column:span 1}
+  .frame img{height:380px}.bk-card img{height:340px}
+  .btn{font-size:14.5px;padding:12px 13px 12px 22px}.hero-cta{width:100%}
+  .wa-float{width:54px;height:54px;font-size:27px;bottom:18px;left:18px}
+}
+</style>
+</head>
+<body>
+<svg class="grain"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+<div class="progress" id="progress"></div>
+<a class="wa-float" href="https://wa.me/966554222541?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B5%D8%A7%D9%84%D9%88%D9%86%20%D8%A7%D9%84%D9%85%D8%B1%D8%A3%D8%A9%20%D8%A7%D9%84%D9%83%D9%84%D8%A7%D8%B3%D9%8A%D9%83%D9%8A%D8%A9%20%F0%9F%8C%B8%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF.%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%D8%A9%3A%20" target="_blank" rel="noopener" aria-label="احجزي عبر واتساب"><i class="ph-fill ph-whatsapp-logo"></i></a>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-pill">
+    <a href="#home" class="brand">
+      <span class="brand-mk">C</span>
+      <span class="brand-tx"><b>المرأة الكلاسيكية</b><span>Classic Women</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">عن الصالون</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#gallery">المعرض</a>
+      <a href="#booking" class="nav-cta">احجزي موعدك<i class="ph-fill ph-whatsapp-logo"></i></a>
+    </div>
+    <button class="burger" id="burger" aria-label="القائمة"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay">
+  <a href="#home">الرئيسية<span class="ix">01</span></a>
+  <a href="#about">عن الصالون<span class="ix">02</span></a>
+  <a href="#services">خدماتنا<span class="ix">03</span></a>
+  <a href="#gallery">المعرض<span class="ix">04</span></a>
+  <a href="#booking">احجزي موعدك<span class="ix">05</span></a>
+  <div class="overlay-foot">CLASSIC WOMEN · تبوك</div>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-bg" id="heroBg"><img src="img/hero.jpg" alt="صالون المرأة الكلاسيكية تبوك"></div>
+  <div class="hero-inner">
+    <span class="hero-eyebrow"><span class="dot"></span> صالون نسائي للتزيين · <b>تبوك</b></span>
+    <h1>المرأة الكلاسيكية<span class="en">CLASSIC WOMEN</span></h1>
+    <p class="lede">أناقةٌ كلاسيكية ولمسةٌ راقية — صبغة وعناية بالشعر، مكياج، وعناية بالأظافر بأيدٍ احترافية. <span class="en">Where elegance is timeless.</span></p>
+    <div class="hero-cta">
+      <a href="https://wa.me/966554222541?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B5%D8%A7%D9%84%D9%88%D9%86%20%D8%A7%D9%84%D9%85%D8%B1%D8%A3%D8%A9%20%D8%A7%D9%84%D9%83%D9%84%D8%A7%D8%B3%D9%8A%D9%83%D9%8A%D8%A9%20%F0%9F%8C%B8%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF.%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%D8%A9%3A%20" target="_blank" rel="noopener" class="btn btn-wa">احجزي موعدك<i class="ph-fill ph-whatsapp-logo"></i></a>
+      <a href="#services" class="btn btn-ghost">خدماتنا<i class="ph ph-sparkle"></i></a>
+    </div>
+  </div>
+  <div class="hero-rate">
+    <span class="st"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star-half"></i></span>
+    <b class="fl">4.5</b><span>٦١٦ تقييم زائرة</span>
+  </div>
+  <div class="scroll-hint"><span>SCROLL</span><span class="ln"></span></div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marq">
+  <div class="marq-track">
+    <span class="tk en">Classic Women</span><span class="sep">✦</span>
+    <span class="tk">صبغة وعناية بالشعر</span><span class="sep">✦</span>
+    <span class="tk">مكياج وتصفيف</span><span class="sep">✦</span>
+    <span class="tk">عناية بالأظافر</span><span class="sep">✦</span>
+    <span class="tk">أناقة كلاسيكية</span><span class="sep">✦</span>
+    <span class="tk en">Classic Women</span><span class="sep">✦</span>
+    <span class="tk">صبغة وعناية بالشعر</span><span class="sep">✦</span>
+    <span class="tk">مكياج وتصفيف</span><span class="sep">✦</span>
+    <span class="tk">عناية بالأظافر</span><span class="sep">✦</span>
+    <span class="tk">أناقة كلاسيكية</span><span class="sep">✦</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="pad" id="about">
+  <div class="wrap about-grid">
+    <div class="about-media rv">
+      <div class="about-chip"><span>راقٍ<br>ونظيف</span></div>
+      <div class="frame">
+        <img src="img/reception.jpg" alt="استقبال صالون المرأة الكلاسيكية">
+        <div class="badge"><i class="ph-fill ph-crown-simple"></i>
+          <div><b>استقبال راقٍ</b><span>WARM WELCOME</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="about-tx rv d1">
+      <span class="tag"><i class="ph ph-flower-lotus"></i> عن الصالون</span>
+      <h2>جمالكِ <em>بلمسةٍ كلاسيكية</em></h2>
+      <p>في <b>صالون المرأة الكلاسيكية</b> نؤمن أن الأناقة الحقيقية كلاسيكية لا تخضع للموضة العابرة. نمنحكِ تجربة تدليلٍ راقية في أجواء هادئة ونظيفة، بأيدي اختصاصيات محترفات.</p>
+      <p>من <b>الصبغات والعناية بالشعر</b> إلى المكياج والعناية بالأظافر، نهتمّ بأدقّ التفاصيل لتخرجي بأبهى إطلالة — وهذا ما تثني عليه زائراتنا دائماً.</p>
+      <div class="counters">
+        <div class="cnt"><b data-count="4.5" data-dec="1">0</b><span>تقييم الزائرات</span></div>
+        <div class="cnt"><b data-count="616">0</b><span>تقييم موثّق</span></div>
+        <div class="cnt"><b data-count="11" data-suffix=" م">0</b><span>حتى المساء يومياً</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services pad" id="services">
+  <div class="wrap">
+    <div class="s-head rv">
+      <span class="tag"><i class="ph ph-sparkle"></i> خدماتنا</span>
+      <h2>عنايةٌ <em>متكاملة</em></h2>
+      <p>باقة خدمات تجميلية راقية تجمع الخبرة بالذوق الكلاسيكي.</p>
+    </div>
+    <div class="srv-grid">
+      <div class="srv rv">
+        <div class="srv-ic"><i class="ph ph-scissors"></i></div>
+        <h3>الشعر والصبغات<span class="se">Hair &amp; Color</span></h3>
+        <p>قصّ، صبغات بألوان عصرية وكلاسيكية، وعلاجات عناية بإشراف خبيرات الألوان.</p>
+        <ul><li>صبغة</li><li>قص وتصفيف</li><li>علاج وعناية</li></ul>
+      </div>
+      <div class="srv rv d1">
+        <div class="srv-ic"><i class="ph ph-wind"></i></div>
+        <h3>السشوار والتصفيف<span class="se">Styling</span></h3>
+        <p>تجفيف وتصفيف احترافي وتسريحات للمناسبات تدوم طويلاً بإطلالة أنيقة.</p>
+        <ul><li>سشوار</li><li>تسريحات</li><li>مناسبات</li></ul>
+      </div>
+      <div class="srv rv d2">
+        <div class="srv-ic"><i class="ph ph-sparkle"></i></div>
+        <h3>المكياج<span class="se">Makeup</span></h3>
+        <p>مكياج ناعم وثابت لكل المناسبات على يد فنّانات مكياج محترفات.</p>
+        <ul><li>مكياج سهرة</li><li>مكياج ناعم</li><li>عرائس</li></ul>
+      </div>
+      <div class="srv rv">
+        <div class="srv-ic"><i class="ph ph-hand-heart"></i></div>
+        <h3>العناية بالأظافر<span class="se">Nails</span></h3>
+        <p>مونيكير وبديكير وتركيب وتصميم أظافر بلمسة كلاسيكية نظيفة وأنيقة.</p>
+        <ul><li>مونيكير</li><li>بديكير</li><li>تصميم أظافر</li></ul>
+      </div>
+      <div class="srv rv d1">
+        <div class="srv-ic"><i class="ph ph-drop"></i></div>
+        <h3>العناية والاسترخاء<span class="se">Care &amp; Spa</span></h3>
+        <p>جلسات عناية وبديكير سبا في ركنٍ هادئ مخصّص للاسترخاء التام.</p>
+        <ul><li>بديكير سبا</li><li>عناية باليدين</li><li>استرخاء</li></ul>
+      </div>
+      <div class="srv rv d2">
+        <div class="srv-ic"><i class="ph ph-crown-simple"></i></div>
+        <h3>باقات المناسبات<span class="se">Occasions</span></h3>
+        <p>باقات متكاملة للعرائس والمناسبات تجمع الشعر والمكياج والأظافر في موعدٍ واحد.</p>
+        <ul><li>عرائس</li><li>سهرات</li><li>تجهيز كامل</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="pad" id="gallery">
+  <div class="wrap">
+    <div class="s-head rv">
+      <span class="tag"><i class="ph ph-images"></i> المعرض</span>
+      <h2>من داخل <em>الصالون</em></h2>
+      <p>لقطاتٌ حقيقية من أجوائنا وأعمالنا.</p>
+    </div>
+    <div class="gal-bento rv">
+      <figure class="gc gc-a" data-img="img/spa.jpg">
+        <img src="img/spa.jpg" alt="ركن العناية بالأظافر">
+        <div class="ov"><div class="n">SPA CORNER</div><h3>ركن البديكير والعناية</h3></div>
+      </figure>
+      <figure class="gc gc-b" data-img="img/manicure.jpg">
+        <img src="img/manicure.jpg" alt="مونيكير كلاسيكي">
+        <div class="ov"><div class="n">CLASSIC MANICURE</div><h3>مونيكير فرنسي أنيق</h3></div>
+      </figure>
+      <div class="gc gc-quote">
+        <div class="q">“Where elegance<br>is timeless.”</div>
+        <div class="qa">أناقةٌ كلاسيكية لا تنتهي</div>
+        <div class="qm">Classic Women</div>
+      </div>
+      <figure class="gc gc-c" data-img="img/nails.jpg">
+        <img src="img/nails.jpg" alt="تصميم أظافر">
+        <div class="ov"><div class="n">NAIL ART</div><h3>تصاميم ناعمة</h3></div>
+      </figure>
+      <figure class="gc gc-d" data-img="img/exterior.jpg">
+        <img src="img/exterior.jpg" alt="واجهة صالون المرأة الكلاسيكية">
+        <div class="ov"><div class="n">TABUK</div><h3>موقعنا</h3></div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking pad" id="booking">
+  <div class="wrap bk-grid">
+    <div class="bk-tx rv">
+      <span class="tag"><i class="ph ph-calendar-heart"></i> الحجز والتواصل</span>
+      <h2>احجزي <em>موعدكِ</em> بسهولة</h2>
+      <p>أرسلي لنا عبر واتساب أو اتصلي مباشرة — يسعدنا استقبالكِ في حي المصيف بتبوك.</p>
+      <div class="bk-cta">
+        <a href="https://wa.me/966554222541?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%B5%D8%A7%D9%84%D9%88%D9%86%20%D8%A7%D9%84%D9%85%D8%B1%D8%A3%D8%A9%20%D8%A7%D9%84%D9%83%D9%84%D8%A7%D8%B3%D9%8A%D9%83%D9%8A%D8%A9%20%F0%9F%8C%B8%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF.%20%D8%A7%D9%84%D8%AE%D8%AF%D9%85%D8%A9%20%D8%A7%D9%84%D9%85%D8%B7%D9%84%D9%88%D8%A8%D8%A9%3A%20" target="_blank" rel="noopener" class="btn btn-wa">واتساب الحجز<i class="ph-fill ph-whatsapp-logo"></i></a>
+        <a href="tel:+966554222541" class="btn btn-light">اتصلي بنا<i class="ph ph-phone"></i></a>
+      </div>
+      <div class="ct-rows">
+        <a class="ct-row" href="tel:+966554222541">
+          <div class="ic"><i class="ph-fill ph-phone"></i></div>
+          <div class="d"><b>للحجز والاستفسار</b><span>055 422 2541</span></div>
+        </a>
+        <div class="ct-row">
+          <div class="ic"><i class="ph-fill ph-clock"></i></div>
+          <div class="d"><b>ساعات العمل</b><span class="ar">يومياً · حتى ١١ مساءً</span></div>
+        </div>
+        <a class="ct-row" href="https://www.google.com/maps/place/Classic+Woman/@28.4408182,36.5241283,17z" target="_blank" rel="noopener">
+          <div class="ic"><i class="ph-fill ph-map-pin"></i></div>
+          <div class="d"><b>الموقع</b><span class="ar">حي المصيف الأول · تبوك</span></div>
+        </a>
+      </div>
+    </div>
+    <div class="bk-card rv d1">
+      <img src="img/spa.jpg" alt="أجواء صالون المرأة الكلاسيكية">
+      <div class="cc-foot"><b>المرأة الكلاسيكية</b><span class="hrs">WHERE ELEGANCE IS TIMELESS</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="f-mk">C</div>
+  <h3>المرأة الكلاسيكية</h3>
+  <div class="f-en">Classic Women · Tabuk</div>
+  <div class="f-links">
+    <a href="#about">عن الصالون</a>
+    <a href="#services">خدماتنا</a>
+    <a href="#gallery">المعرض</a>
+    <a href="#booking">الحجز</a>
+  </div>
+  <div class="f-line"></div>
+  <small>© ٢٠٢٦ صالون المرأة الكلاسيكية للتزيين — جميع الحقوق محفوظة<br>صُمّم بعناية · الصور والمعلومات من الحساب الرسمي على خرائط جوجل</small>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb"><button class="lb-x" id="lbx"><i class="ph ph-x"></i></button><img id="lbimg" src="" alt=""></div>
+
+<script>
+const nav=document.getElementById('nav'),prog=document.getElementById('progress'),heroBg=document.getElementById('heroBg');
+let ticking=false;
+function onScroll(){if(ticking)return;ticking=true;requestAnimationFrame(()=>{
+  const y=scrollY;nav.classList.toggle('shrink',y>40);
+  const h=document.documentElement.scrollHeight-innerHeight;prog.style.width=(h>0?(y/h)*100:0)+'%';
+  if(heroBg&&y<innerHeight)heroBg.style.transform='translateY('+(y*0.16)+'px)';ticking=false;});}
+addEventListener('scroll',onScroll,{passive:true});
+const burger=document.getElementById('burger'),ov=document.getElementById('overlay');
+const toggle=()=>{const on=!ov.classList.contains('on');burger.classList.toggle('on',on);ov.classList.toggle('on',on);document.body.classList.toggle('lock',on);};
+burger.onclick=toggle;ov.querySelectorAll('a').forEach(a=>a.onclick=toggle);
+const rv=document.querySelectorAll('.rv');
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0,rootMargin:'0px 0px -8% 0px'});
+rv.forEach(el=>io.observe(el));
+function safety(){const h=innerHeight;rv.forEach(el=>{if(el.getBoundingClientRect().top<h*0.96)el.classList.add('in');});}
+addEventListener('load',()=>{safety();setTimeout(safety,400);});
+addEventListener('scroll',safety,{passive:true});setTimeout(safety,1300);
+const counters=document.querySelectorAll('[data-count]');
+const cio=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){animate(e.target);cio.unobserve(e.target);}});},{threshold:.4});
+counters.forEach(c=>cio.observe(c));
+function animate(el){const target=parseFloat(el.dataset.count),dec=parseInt(el.dataset.dec||'0'),suf=el.dataset.suffix||'';
+  const dur=1300,t0=performance.now();
+  function step(t){const p=Math.min((t-t0)/dur,1),e=1-Math.pow(1-p,3);
+    el.textContent=(target*e).toFixed(dec)+suf;if(p<1)requestAnimationFrame(step);else el.textContent=target.toFixed(dec)+suf;}
+  requestAnimationFrame(step);}
+const lb=document.getElementById('lb'),lbimg=document.getElementById('lbimg'),lbx=document.getElementById('lbx');
+document.querySelectorAll('[data-img]').forEach(f=>f.addEventListener('click',()=>{lbimg.src=f.dataset.img;lb.classList.add('on');document.body.classList.add('lock');}));
+const close=()=>{lb.classList.remove('on');document.body.classList.remove('lock');};
+lbx.onclick=close;lb.onclick=e=>{if(e.target===lb)close();};
+addEventListener('keydown',e=>{if(e.key==='Escape')close();});
+</script>
+</body>
+</html>
